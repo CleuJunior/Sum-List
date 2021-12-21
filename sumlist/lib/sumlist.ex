@@ -4,7 +4,7 @@ defmodule Sumlist do
   defp sum([], acc), do: acc
 
   defp sum([head | tail], acc) do
-    acc =+ head
+    acc = acc + head
     sum(tail, acc)
   end
 
